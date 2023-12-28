@@ -1,13 +1,276 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="coffee-house/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>coffee-shop</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="wrapper">
+      <div class="header-line">
+        <div class="header-logo">
+          <a href="index.html"
+            ><img
+              width="100"
+              height="60"
+              src="/coffee-house/images/logo.svg"
+              alt=""
+          /></a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#Favavava">Favorite coffee</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#myAnchor">About</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#Mobibobi">Mobile app</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#myAnchor">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="coffee-menu">
+          <a class="nav-item-menu" href="menu.html">Menu</a>
+          <img
+            class="coffee-cup"
+            src="coffee-house/images/coffee-cup.svg"
+            alt=""
+          />
+        </div>
+        <div class="mobile-nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="@">Favorite coffee</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="@">About</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="@">Mobile app</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="@">Contact us</a>
+            </li>
+            <li class="coffee-menu">
+              <a class="nav-item-menu" href="menu.html">Menu</a>
+              <img
+                class="coffee-cup"
+                src="./coffee-house/images/coffee-cup.svg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="header__burger burger">
+          <img
+            src="./coffee-house/images/button-icon-burger.svg"
+            alt="buuurger"
+          />
+        </div>
+      </div>
+      <main>
+        <div class="hero">
+          <div class="hero_txt">
+            <h1>
+              <div class="header-title">
+                <span class="fav">Enjoy</span> premium <br />coffee at our
+                <br />charming cafe
+              </div>
+            </h1>
+            <div class="header-text">
+              With its inviting atmosphere and delicious coffee options, the
+              Coffee House Resource is a popular destination for coffee lovers
+              and those seeking a warm and inviting space to enjoy their
+              favorite beverage.
+            </div>
+            <button class="menu-button">Menu</button>
+          </div>
+        </div>
+      </main>
+      <div class="favorite-coffee">
+        <div class="cont-title">
+          <a name="Favavava"></a>
+          <p class="fav_coffee">
+            Choose your <span class="fav">favorite</span> coffee
+          </p>
+        </div>
+        <div class="coffee-slider">
+          <button class="image-button">
+            <img
+              src="coffee-house/images/button-icon-dark-left.svg"
+              alt="Button Image"
+            />
+          </button>
+          <section>
+            <img
+              class="image"
+              src="coffee-house/images/coffee-slider-1.svg"
+              alt=""
+            />
+            <div class="description">
+              <h3>S'mores Frappucino</h3>
+              <p class="descr-txt">
+                This new drink takes an espresso and mixes it with brown <br />
+                sugar and cinnamon before being topped with oat milk.
+              </p>
+              <p>$5.50</p>
+            </div>
+          </section>
+          <button class="image-button">
+            <img
+              src="coffee-house/images/button-icon-dark-right.svg"
+              alt="Button Image"
+            />
+          </button>
+        </div>
+        <div class="controls">
+          <img src="coffee-house/images/control-active.svg" alt="" />
+          <img src="coffee-house/images/control-inactive.svg" alt="" />
+          <img src="coffee-house/images/control-inactive.svg" alt="" />
+        </div>
+      </div>
+      <div class="cont-title">
+        <div class="large-text">
+          Resource is <span class="fav">the perfect and cozy place</span> where
+          you can enjoy a variety of hot beverages, relax, catch up with
+          friends, or get some work done.
+        </div>
+      </div>
+      <div class="images">
+        <div class="column-1">
+          <img
+            class="image imageC"
+            src="coffee-house/images/about-1.svg"
+            alt=""
+          />
+          <img
+            class="image imageC"
+            src="coffee-house/images/about-2.svg"
+            alt=""
+          />
+        </div>
+        <div class="column-2">
+          <img class="image" src="coffee-house/images/about-3.svg" alt="" />
+          <img class="image" src="coffee-house/images/about-4.svg" alt="" />
+        </div>
+      </div>
+      <div class="mobile-app">
+        <a name="Mobibobi"></a>
+
+        <div class="m-a-title">
+          <p>Download our apps to start ordering</p>
+          <p class="m-a-article">
+            Download the Resource app today and experience the comfort of
+            ordering your favorite coffee from wherever you are
+          </p>
+          <div class="buttons">
+            <button class="button-app">
+              <svg
+                class="buttons-svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.7063 17.6307C22.6694 13.6324 26.0641 11.6872 26.2193 11.5966C24.2967 8.86366 21.3169 8.49026 20.2697 8.46048C17.767 8.20369 15.3393 9.92062 14.0644 9.92062C12.764 9.92062 10.8008 8.48529 8.68482 8.52747C5.96196 8.56841 3.41468 10.1055 2.01762 12.4923C-0.865556 17.359 1.28474 24.5108 4.04705 28.4446C5.42884 30.3712 7.04347 32.5223 9.15687 32.4466C11.2245 32.3635 11.9968 31.1614 14.4919 31.1614C16.9641 31.1614 17.6893 32.4466 19.8447 32.3983C22.0637 32.3635 23.4608 30.463 24.7942 28.519C26.3911 26.3108 27.0323 24.1362 27.0578 24.0245C27.0056 24.0071 22.7483 22.4229 22.7063 17.6307Z"
+                />
+                <path
+                  d="M18.6347 5.87268C19.7468 4.51675 20.5076 2.67205 20.2964 0.800049C18.6869 0.86952 16.674 1.88554 15.5149 3.21169C14.4893 4.38029 13.5732 6.29571 13.8099 8.097C15.6179 8.2285 17.4743 7.20752 18.6347 5.87268Z"
+                />
+              </svg>
+              Available on<br />App Store
+            </button>
+            <button class="button-app">
+              <svg
+                class="buttons-svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.7558 3.20297C3.39335 3.57289 3.18359 4.14884 3.18359 4.89471V31.4994C3.18359 32.2453 3.39335 32.8212 3.7558 33.1911L3.84525 33.2723L19.1359 18.37V18.0181L3.84525 3.11575L3.7558 3.20297Z"
+                />
+                <path
+                  d="M26.0776 23.34L20.9863 18.37V18.0181L26.0837 13.0482L26.1979 13.1128L32.2345 16.4617C33.9573 17.4121 33.9573 18.976 32.2345 19.9324L26.1979 23.2753L26.0776 23.34Z"
+                />
+                <path
+                  d="M25.2733 24.2007L20.0617 19.1195L4.68164 34.1166C5.25384 34.7031 6.18695 34.7737 7.24807 34.1873L25.2733 24.2007Z"
+                />
+                <path
+                  d="M25.2733 12.1876L7.24807 2.20103C6.18695 1.62058 5.25384 1.69125 4.68164 2.27772L20.0617 17.2688L25.2733 12.1876Z"
+                />
+              </svg>
+              Available on<br />Google Play
+            </button>
+          </div>
+        </div>
+        <div class="mobile_scr__img">
+          <img
+            class="image"
+            src="coffee-house/images/mobile-screens.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <footer>
+        <div class="contacts">
+          <div class="sip-title">
+            <div class="title-text">
+              Sip, Savor, Smile.<br />
+              <span class="fav">It's coffee time </span>
+            </div>
+            <div class="socials">
+              <img
+                class="socials-elem"
+                src="coffee-house/images/button-icon-light-twitter.svg"
+                alt=""
+              />
+              <img
+                class="socials-elem"
+                src="coffee-house/images/button-icon-light-inst.svg"
+                alt=""
+              />
+              <img
+                class="socials-elem"
+                src="coffee-house/images/button-icon-light-facebook.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="contact-info">
+            <a name="myAnchor"></a>
+            <p class="txt-24px">Contact us</p>
+            <ul class="contact-list">
+              <li class="contact-list-elem">
+                <img src="coffee-house/images/pin-alt.svg" alt="" /> 8558 Green
+                Rd., LA
+              </li>
+              <li class="contact-list-elem">
+                <img src="coffee-house/images/phone.svg" alt="" /> +1 (603)
+                555-0123
+              </li>
+              <li class="contact-list-elem">
+                <img src="coffee-house/images/clock.svg" alt="" /> Mon-Sat: 9:00
+                AM - 23:00 PM
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
